@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evousr-distillation"
+version = "0.1.0"
+description = "Answer distillation for lightweight user simulators"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+evousr-export = "evousr_distillation.export:main"
+evousr-prepare-model = "evousr_distillation.prepare_model:main"
+evousr-train = "evousr_distillation.train:main"
+evousr-predict = "evousr_distillation.predict:main"
+evousr-score = "evousr_distillation.score:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
