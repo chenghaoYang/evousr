@@ -1,0 +1,290 @@
+{
+  "time": "2026-10-26T03:34:30.299130+08:00",
+  "teacher_id": "dpsk41-rule-rewrite-20261026",
+  "evolved": {
+    "n": 6400,
+    "correct": 3050,
+    "micro": 0.4765625,
+    "macro": 0.4941051136363636,
+    "invalid": 0,
+    "per_domain": {
+      "Amazon-Beauty": {
+        "n": 320,
+        "correct": 177,
+        "accuracy": 0.553125,
+        "invalid": 0
+      },
+      "Amazon-Fashion": {
+        "n": 320,
+        "correct": 157,
+        "accuracy": 0.490625,
+        "invalid": 0
+      },
+      "Amazon-Grocery": {
+        "n": 320,
+        "correct": 149,
+        "accuracy": 0.465625,
+        "invalid": 0
+      },
+      "Amazon-Office": {
+        "n": 320,
+        "correct": 152,
+        "accuracy": 0.475,
+        "invalid": 0
+      },
+      "KuaiRec2": {
+        "n": 640,
+        "correct": 270,
+        "accuracy": 0.421875,
+        "invalid": 0
+      },
+      "LastFM": {
+        "n": 640,
+        "correct": 302,
+        "accuracy": 0.471875,
+        "invalid": 0
+      },
+      "MIND": {
+        "n": 1280,
+        "correct": 413,
+        "accuracy": 0.32265625,
+        "invalid": 0
+      },
+      "goodreads": {
+        "n": 640,
+        "correct": 501,
+        "accuracy": 0.7828125,
+        "invalid": 0
+      },
+      "ml-1m": {
+        "n": 640,
+        "correct": 330,
+        "accuracy": 0.515625,
+        "invalid": 0
+      },
+      "mobilerec": {
+        "n": 640,
+        "correct": 210,
+        "accuracy": 0.328125,
+        "invalid": 0
+      },
+      "steam": {
+        "n": 640,
+        "correct": 389,
+        "accuracy": 0.6078125,
+        "invalid": 0
+      }
+    }
+  },
+  "baseline": {
+    "n": 6400,
+    "correct": 2947,
+    "micro": 0.46046875,
+    "macro": 0.4753551136363637,
+    "invalid": 0,
+    "per_domain": {
+      "Amazon-Beauty": {
+        "n": 320,
+        "correct": 157,
+        "accuracy": 0.490625,
+        "invalid": 0
+      },
+      "Amazon-Fashion": {
+        "n": 320,
+        "correct": 157,
+        "accuracy": 0.490625,
+        "invalid": 0
+      },
+      "Amazon-Grocery": {
+        "n": 320,
+        "correct": 144,
+        "accuracy": 0.45,
+        "invalid": 0
+      },
+      "Amazon-Office": {
+        "n": 320,
+        "correct": 148,
+        "accuracy": 0.4625,
+        "invalid": 0
+      },
+      "KuaiRec2": {
+        "n": 640,
+        "correct": 249,
+        "accuracy": 0.3890625,
+        "invalid": 0
+      },
+      "LastFM": {
+        "n": 640,
+        "correct": 310,
+        "accuracy": 0.484375,
+        "invalid": 0
+      },
+      "MIND": {
+        "n": 1280,
+        "correct": 413,
+        "accuracy": 0.32265625,
+        "invalid": 0
+      },
+      "goodreads": {
+        "n": 640,
+        "correct": 488,
+        "accuracy": 0.7625,
+        "invalid": 0
+      },
+      "ml-1m": {
+        "n": 640,
+        "correct": 346,
+        "accuracy": 0.540625,
+        "invalid": 0
+      },
+      "mobilerec": {
+        "n": 640,
+        "correct": 181,
+        "accuracy": 0.2828125,
+        "invalid": 0
+      },
+      "steam": {
+        "n": 640,
+        "correct": 354,
+        "accuracy": 0.553125,
+        "invalid": 0
+      }
+    }
+  },
+  "gepa": {
+    "n": 6400,
+    "correct": 2983,
+    "micro": 0.46609375,
+    "macro": 0.48245738636363633,
+    "invalid": 0,
+    "per_domain": {
+      "Amazon-Beauty": {
+        "n": 320,
+        "correct": 171,
+        "accuracy": 0.534375,
+        "invalid": 0
+      },
+      "Amazon-Fashion": {
+        "n": 320,
+        "correct": 157,
+        "accuracy": 0.490625,
+        "invalid": 0
+      },
+      "Amazon-Grocery": {
+        "n": 320,
+        "correct": 144,
+        "accuracy": 0.45,
+        "invalid": 0
+      },
+      "Amazon-Office": {
+        "n": 320,
+        "correct": 148,
+        "accuracy": 0.4625,
+        "invalid": 0
+      },
+      "KuaiRec2": {
+        "n": 640,
+        "correct": 242,
+        "accuracy": 0.378125,
+        "invalid": 0
+      },
+      "LastFM": {
+        "n": 640,
+        "correct": 299,
+        "accuracy": 0.4671875,
+        "invalid": 0
+      },
+      "MIND": {
+        "n": 1280,
+        "correct": 413,
+        "accuracy": 0.32265625,
+        "invalid": 0
+      },
+      "goodreads": {
+        "n": 640,
+        "correct": 500,
+        "accuracy": 0.78125,
+        "invalid": 0
+      },
+      "ml-1m": {
+        "n": 640,
+        "correct": 332,
+        "accuracy": 0.51875,
+        "invalid": 0
+      },
+      "mobilerec": {
+        "n": 640,
+        "correct": 208,
+        "accuracy": 0.325,
+        "invalid": 0
+      },
+      "steam": {
+        "n": 640,
+        "correct": 369,
+        "accuracy": 0.5765625,
+        "invalid": 0
+      }
+    }
+  },
+  "comparisons": {
+    "evolved_minus_T2": {
+      "ci95": [
+        0.01005648133274225,
+        0.02769460778075675
+      ],
+      "familywise_bonferroni_ci": [
+        0.008519846358601622,
+        0.029080838250306176
+      ],
+      "macro_delta": 0.018749999999999933,
+      "micro_delta": 0.016093750000000018,
+      "net_correct": 103
+    },
+    "evolved_minus_GEPA": {
+      "ci95": [
+        0.00413563800331791,
+        0.01939255099766291
+      ],
+      "familywise_bonferroni_ci": [
+        0.0031318055360000504,
+        0.020490207753993964
+      ],
+      "macro_delta": 0.011647727272727282,
+      "micro_delta": 0.010468750000000027,
+      "net_correct": 67
+    }
+  },
+  "selected_origin": {
+    "Amazon-Beauty": "old",
+    "Amazon-Fashion": "empty",
+    "Amazon-Grocery": "new",
+    "Amazon-Office": "new",
+    "KuaiRec2": "new",
+    "LastFM": "new",
+    "MIND": "empty",
+    "goodreads": "new",
+    "ml-1m": "new",
+    "mobilerec": "old",
+    "steam": "new"
+  },
+  "origin_counts": {
+    "old": 2,
+    "empty": 2,
+    "new": 7
+  },
+  "rule_count": 35,
+  "cost": {
+    "attempts": 20817,
+    "prompt_tokens": 114906493,
+    "completion_tokens": 76330,
+    "total_tokens": 114982823
+  },
+  "non_test_cost": {
+    "attempts": 16977,
+    "prompt_tokens": 93001045,
+    "completion_tokens": 68650,
+    "total_tokens": 93069695
+  },
+  "adoption_after_benchmark_comparison": true,
+  "historical_test_exposure": true
+}

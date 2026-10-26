@@ -1,0 +1,48 @@
+{
+  "Amazon-Beauty": [
+    "When a user's history shows repeated purchases in a specific beauty category (e.g., nail products, hair care, skincare, fragrance), favor candidates from that same category over unrelated or generic items.",
+    "Prefer candidates whose product type matches the user's demonstrated use pattern (e.g., at-home beauty tools, electric grooming devices, DIY manicure/pedicure supplies) over consumables unrelated to that pattern.",
+    "When a user has negatively reviewed hair products (shedding, odor, dye issues), avoid recommending hair bundles or wigs, and favor non-hair alternatives.",
+    "Users who repeatedly rate skincare/serum/mask products highly should be matched with skincare, serum, or mask candidates rather than hair or nail items.",
+    "A generic commodity item (e.g., baby shampoo) that appears across many unrelated lists and matches no user history should be deprioritized in favor of a candidate matching at least one prior category.",
+    "When the user's history includes fragrance/body-care purchases with positive scent feedback, favor fragrance or scented body-care candidates; otherwise prefer tool or skincare items."
+  ],
+  "Amazon-Fashion": [],
+  "Amazon-Grocery": [],
+  "Amazon-Office": [],
+  "KuaiRec2": [
+    "When a user's history shows repeated Complete behavior on short 民生资讯/社会事件 videos (news/accident/social-event clips), prefer a candidate in that same category over unrelated entertainment, dance, or sales clips, unless the candidate's play count is negligible.",
+    "When a user has just skipped several consecutive videos within one session (watch time near zero or well under duration), do not assume category preference; favor candidates from categories with prior Complete signals in that session over high-play but skipped categories.",
+    "A candidate in a category the user has repeatedly Completed (e.g., specific entertainment/star or news subtypes) should be preferred over a candidate in a category only ever Skipped, even if the skipped-category candidate has higher plays/likes.",
+    "Low-play, low-engagement candidates (few hundred plays or fewer) from generic 自拍/生活/营销 categories are weak; prefer a candidate with substantive engagement from a category the user has engaged with.",
+    "When history is dominated by skips across many categories with no clear Completed category, prefer the candidate whose title/category matches the single most recently Completed item's category rather than a high-play generic clip.",
+    "Do not over-rely on a single prior Complete; if the completed item's category appears only once and other candidates share a category with multiple completes, choose the latter."
+  ],
+  "LastFM": [
+    "When the user's history shows consistent genre tagging (e.g. metal, punk, electronic) and candidate tags align with those genres, prefer that candidate over candidates whose tags are unrelated to the user's demonstrated taste.",
+    "When no history is present, prefer candidates whose tags form a coherent genre cluster matching a common music category over candidates with no tags or sparse unrelated tags.",
+    "When a candidate's tags strongly match the user's frequent applied tags (e.g. female vocalists, indie, electronic, hip-hop), prefer it even if friend-listen signals are absent.",
+    "Disregard friend-listen counts as a primary signal; they are often misleading and candidates with friend listeners frequently lose to better tag-matched candidates.",
+    "When candidate tags are empty, treat them as neutral rather than unfavorable; empty-tag candidates can be selected when they are the only ones not conflicting with the user's taste.",
+    "Prefer candidates whose tags overlap the user's demonstrated subgenre vocabulary (e.g. specific metal/punk/electronic subgenres) over candidates with generic or mismatched tags."
+  ],
+  "MIND": [],
+  "goodreads": [
+    "When the user's history shows reading multiple volumes of a series and the candidates include the next/further volume of that same series, prefer that series-continuation volume over unrelated well-known standalone graphic novels.",
+    "When the user's history shows high ratings (4-5) concentrated on a specific author or creator, prefer candidates by that same author/creator over equally rated unrelated options.",
+    "When a candidate shares the same series as items the user has already read or viewed, prefer it even if its rating is lower than prominent popular alternatives.",
+    "When the user's history is dominated by superhero/mainstream comics (Marvel/DC), prefer candidate superhero/mainstream titles over manga, memoir, or European album options.",
+    "When the user's history is dominated by manga or yaoi/romance graphic novels, prefer candidate manga or romance/yaoi titles over Western superhero or literary graphic novels.",
+    "When two candidates are nearly identical editions of the same work, prefer the one matching the user's apparent language/region history; otherwise do not distinguish based on position."
+  ],
+  "ml-1m": [],
+  "mobilerec": [
+    "When a user's history shows repeated engagement with games (Action, Simulation, Casual, Puzzle, Role Playing, Card), prefer free game candidates in those genres over non-game utility, finance, medical, or productivity apps.",
+    "When the candidate set includes an app in the same specific genre as a highly-rated (4-5 star) item in the user's history, favor that genre match, especially for puzzle, word, card, or casual games.",
+    "Do not assume a user's preferred category from a single low-rated or negatively-reviewed item; weight highly-rated (4-5) history entries more heavily than 1-2 star entries when inferring genre preference.",
+    "When a user's history contains multiple finance or banking apps with mixed ratings, a well-reviewed mainstream banking/finance app can be a reasonable pick, but game candidates should be preferred if the user shows stronger positive engagement with games.",
+    "Prefer candidates with high review counts and strong ratings (e.g., 4.4+ with hundreds of thousands of reviews) over low-review or obscure apps when genre match is otherwise comparable.",
+    "Avoid selecting niche medical, weather, or utility candidates unless the user's history shows direct positive engagement with that category; otherwise default to mainstream entertainment or game apps."
+  ],
+  "steam": []
+}

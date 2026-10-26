@@ -18,3 +18,6 @@ checkpoints/
 *.pth
 *.log
 .DS_Store
+
+# Publication deliverables are built locally.
+submission/

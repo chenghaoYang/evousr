@@ -1,0 +1,57 @@
+{
+  "Amazon-Beauty": [
+    "When a user's history shows repeated purchases in a specific beauty category (e.g., nail products, hair care, skincare, fragrance), favor candidates from that same category over unrelated or generic items.",
+    "Prefer candidates whose product type matches the user's demonstrated use pattern (e.g., at-home beauty tools, electric grooming devices, DIY manicure/pedicure supplies) over consumables unrelated to that pattern.",
+    "When a user has negatively reviewed hair products (shedding, odor, dye issues), avoid recommending hair bundles or wigs, and favor non-hair alternatives.",
+    "Users who repeatedly rate skincare/serum/mask products highly should be matched with skincare, serum, or mask candidates rather than hair or nail items.",
+    "A generic commodity item (e.g., baby shampoo) that appears across many unrelated lists and matches no user history should be deprioritized in favor of a candidate matching at least one prior category.",
+    "When the user's history includes fragrance/body-care purchases with positive scent feedback, favor fragrance or scented body-care candidates; otherwise prefer tool or skincare items."
+  ],
+  "Amazon-Fashion": [],
+  "Amazon-Grocery": [
+    "Predict by matching the candidate's category, flavor, or product type to the user's strongest and most frequent recent positive ratings (5/5), avoiding items in categories they rated poorly and avoiding candidates with low population selection scores when a closer personal-category match exists."
+  ],
+  "Amazon-Office": [
+    "Predict the candidate that best matches the user's dominant purchase theme, but also favor items that are task-adjacent or use-case complements to what they repeatedly buy (e.g., supplies for a tool they own, accessories for a workspace they are building), not just exact-category repeats.",
+    "Prefer distinctive or specialty items tied to the user's demonstrated interest over ubiquitous commodity defaults (plain copy paper, generic notebook, common pens) unless the history itself centers on those commodities.",
+    "When the user's history shows a broad or mixed pattern with no clear single category match among candidates, choose the candidate that plausibly supports their overall activity or setting rather than the most generic filler."
+  ],
+  "KuaiRec2": [
+    "Prefer candidates whose category matches content the user recently completed; when the user's history is dominated by skips across most categories, favor the candidate with the most distinctive, specific, human-readable description over generic or empty-titled clips.",
+    "Do not select an item solely because its category appeared in the user's history; require that category to have a recent completion rather than a skip, since heavily shown categories are often skipped by most users.",
+    "When no clear category match exists, prefer candidates with plausible engagement ratios and real comments/shares over near-zero-engagement or empty-metadata clips, but do not let absolute play counts or population popularity drive the choice."
+  ],
+  "LastFM": [
+    "Match candidates to the genres the user actually applies in their own tagging behavior (My Behavior), not to the displayed tags of artists they listened to, since displayed tags are frequently garbled or unrelated.",
+    "Prefer candidates whose tags reflect the user's demonstrated subgenre vocabulary (specific metal, punk, electronic, folk subgenres) over candidates with generic, single-word, or mismatched tags.",
+    "Disregard friend-listen counts and population reference counts as selection signals; they rarely predict the user's choice and often point to the wrong candidate.",
+    "Treat empty-tag candidates as neutral, not unfavorable: they can be selected when no tagged candidate matches the user's taste or when they are the only non-conflicting option.",
+    "When the user's history is empty or shows no consistent genre signal, prefer a candidate whose tags form a coherent common genre cluster over candidates with sparse, empty, or garbled tags."
+  ],
+  "MIND": [],
+  "goodreads": [
+    "When the history shows strong engagement with a specific series or creator (multiple volumes read, especially at high ratings), prefer a candidate from that same series/creator over unrelated popular or classic titles; also favor the next unread volume when the series is clearly being followed.",
+    "Do not pick a widely popular classic (superhero landmark, newspaper strip, or memoir) merely for its high average rating; instead match the candidate to the user's demonstrated genre/creator pattern, and avoid obscure low-signal titles lacking that match."
+  ],
+  "ml-1m": [
+    "Prefer the candidate whose genre set best matches the genres the user rated highest (4-5) in their history; treat genres the user rated low (1-2) as weak or negative signals unless the candidate also carries a strongly positive genre.",
+    "When the user's history is sparse, mixed, or mostly mediocre, favor the candidate combining a broadly liked live-action genre (action, drama, comedy, thriller, romance) over animation/children's/family titles, which should be chosen only if the user's history shows positive ratings for them.",
+    "When two or more candidates match the user's top genres, prefer the one whose genre combination most closely mirrors the user's highest-rated items, rather than the most globally common or new-release option."
+  ],
+  "mobilerec": [
+    "When the user's history shows strong engagement with games (rating 4-5 on multiple games across action, strategy, puzzle, or arcade), prefer a game candidate over a non-game candidate even if a non-game has higher apparent utility.",
+    "When the user's history contains ratings of 5 on dating or social apps and the candidates include a dating/social app, that dating app is a plausible pick, but do not default to finance or banking apps for such users.",
+    "Do not assume users with finance/banking history (ratings 4-5 on finance apps) will prefer another finance app; often they select a game or content app instead, so treat finance candidates as low priority unless other signals point to it.",
+    "When a user has rated medical or health apps highly (4-5) and also shows productivity/tool usage, they may pick a brain/puzzle or wellness-adjacent app; prefer functional puzzle/word candidates over medical utility duplicates.",
+    "Users who rate many apps low (1-2) for bugs, ads, or paywalls tend to pick simple, high-rated, low-friction candidates (puzzle, casual, word, or clean utility) rather than complex RPG/strategy titles.",
+    "When the user's history is sparse or mixed, prefer the candidate with the highest rating and broadest appeal (e.g., mainstream puzzle/word/casual) over niche simulation, AR, or low-review apps."
+  ],
+  "steam": [
+    "Prefer the candidate whose tags and genre best match the user's highest-playtime and positively reviewed games; treat heavily played themes as stronger evidence than incidental one-off purchases.",
+    "Penalize or exclude candidates that are DLC, soundtracks, demos, cosmetic packs, or add-on content unless the user's history shows repeated engagement with that exact base game.",
+    "Exclude candidates whose format is VR-only, a movie, or non-game utility software unless the user's history contains similar non-game items.",
+    "Do not select a candidate merely because it is popular, ubiquitous, or free-to-play; a widely-owned free shooter is a weak default only when nothing else matches the user's profile.",
+    "When several candidates fit the user's taste, prefer the substantive standalone game over low-quality, poorly reviewed, or unreviewed filler options.",
+    "Prefer candidates matching the user's engagement style: long-session multiplayer/co-op or strategy players favor replayable systems, while narrative players favor story-rich single-player titles."
+  ]
+}

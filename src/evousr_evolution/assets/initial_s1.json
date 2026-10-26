@@ -1,0 +1,34 @@
+{
+  "Amazon-Beauty": [],
+  "Amazon-Fashion": [],
+  "Amazon-Grocery": [],
+  "Amazon-Office": [],
+  "KuaiRec2": [
+    "When a candidate's title or category matches a topic that the user has previously completed (watched at least half the duration), prefer it; if the user consistently skipped similar topics, avoid it.",
+    "Candidates with high engagement ratios (likes/plays > 5% or comments/plays > 1%) are more likely to be chosen, especially when they also match the user's historical category preferences.",
+    "If a candidate belongs to a category frequently skipped in the user's history (e.g., 时尚/营销售卖/女装, 自拍 with low engagement), deprioritize it unless other strong signals exist.",
+    "For users with many followers or role Video Author, prefer candidates with high absolute engagement (plays > 1M or likes > 50k) and avoid low-engagement content.",
+    "If the user has a history of completing videos with emotional or heartwarming content (民生资讯/暖新闻, 情感/亲密关系), prefer candidates in those categories over pure entertainment or lifestyle.",
+    "When a candidate is a duplicate or near-duplicate of a previously skipped item, avoid it; otherwise, for new items, rely on category match and engagement."
+  ],
+  "LastFM": [],
+  "MIND": [],
+  "goodreads": [
+    "When the user has read and highly rated multiple volumes of a specific series, prefer the next unread volume in that same series over unrelated high-rated options.",
+    "Prefer fantasy/paranormal or mystery/thriller/crime graphic novels over non-fiction or historical biography titles, unless the history tag co-occurs with fantasy or the user has rated similar historical graphic memoirs highly.",
+    "Do not default to widely popular superhero or classic titles (e.g., Watchmen, Persepolis, Calvin and Hobbes) merely for high ratings; the user shows mixed engagement with superheroes and strong engagement with quirky indie fantasy series.",
+    "If the user's recent reads cluster around a single series or author, and a candidate belongs to that series while others do not, favor the series continuation.",
+    "When candidates include a first volume of a series matching the user's demonstrated taste for humorous/indie fantasy (e.g., Rat Queens, Saga, Lumberjanes style), prefer it over generic superhero team-up or single-issue titles.",
+    "Prefer candidates with a substantial number of ratings and moderate-to-high average rating over obscure low-rating-count titles, unless the obscure title continues a series the user is actively reading."
+  ],
+  "ml-1m": [],
+  "mobilerec": [
+    "When the user's history shows strong engagement with games (rating 4-5 on multiple games across action, strategy, puzzle, or arcade), prefer a game candidate over a non-game candidate even if a non-game has higher apparent utility.",
+    "When the user's history contains ratings of 5 on dating or social apps and the candidates include a dating/social app, that dating app is a plausible pick, but do not default to finance or banking apps for such users.",
+    "Do not assume users with finance/banking history (ratings 4-5 on finance apps) will prefer another finance app; often they select a game or content app instead, so treat finance candidates as low priority unless other signals point to it.",
+    "When a user has rated medical or health apps highly (4-5) and also shows productivity/tool usage, they may pick a brain/puzzle or wellness-adjacent app; prefer functional puzzle/word candidates over medical utility duplicates.",
+    "Users who rate many apps low (1-2) for bugs, ads, or paywalls tend to pick simple, high-rated, low-friction candidates (puzzle, casual, word, or clean utility) rather than complex RPG/strategy titles.",
+    "When the user's history is sparse or mixed, prefer the candidate with the highest rating and broadest appeal (e.g., mainstream puzzle/word/casual) over niche simulation, AR, or low-review apps."
+  ],
+  "steam": []
+}

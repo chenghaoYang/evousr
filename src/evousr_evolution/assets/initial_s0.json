@@ -1,0 +1,34 @@
+{
+  "Amazon-Beauty": [],
+  "Amazon-Fashion": [],
+  "Amazon-Grocery": [],
+  "Amazon-Office": [],
+  "KuaiRec2": [],
+  "LastFM": [],
+  "MIND": [],
+  "goodreads": [
+    "When the user has read and highly rated sequential volumes of a specific series and the candidate is the next sequential volume in that same series, strongly prefer it.",
+    "When a candidate belongs to a franchise the user has shown strong positive engagement with (e.g., read multiple volumes at 5 stars), prefer it over unrelated candidates even if the specific volume was not read.",
+    "Do not assume a highly-rated popular standalone classic is preferred merely due to high average rating; the user's own history and series continuity outweigh global popularity.",
+    "When the user's history contains mostly one format (e.g., manga, superhero, memoir) and a candidate matches that format/theme while others do not, prefer the matching candidate.",
+    "If a candidate is a later volume in a series but the user has not read earlier volumes in that series, do not treat it as a continuation preference.",
+    "Treat unreviewed/zero-rated read entries as weak signals of preference; rely more on explicit positive ratings for preference inference."
+  ],
+  "ml-1m": [
+    "When a user's history is dominated by high ratings for classic/prestige drama, war, or crime films, prefer candidates in those genres over broad family/animation/musical titles.",
+    "When a user's history consists mostly of children's, animation, or family films, prefer those candidates; otherwise avoid animation/children's options unless the user's history shows positive ratings for them.",
+    "When a user's history shows low ratings for horror or thriller titles, deprioritize horror and thriller candidates unless they also match genres the user rated highly.",
+    "When a user's history shows strong positive ratings for romance or relationship dramas, prefer drama/romance candidates over action, horror, or children's options.",
+    "When a user's history shows strong positive ratings for comedy, prefer comedy candidates (including comedy-drama) over unrelated drama or horror options.",
+    "When a user's history shows strong positive ratings for action, sci-fi, or adventure, prefer those candidates over romance or children's titles, especially if recent ratings in those genres are high."
+  ],
+  "mobilerec": [
+    "Prefer candidates in a category the user has rated positively (4-5 stars) at least once, especially games in action, casual, puzzle, word, card, role playing, or simulation, over categories absent from their history.",
+    "When a user's positive ratings are concentrated in games, prefer free game candidates (puzzle, casual, action, role playing, simulation) over non-game utility, finance, shopping, or productivity apps, even when those apps have very high review counts.",
+    "Avoid finance, banking, insurance, and business candidates unless the user has positively rated an app in a finance or business category; such candidates are rarely fits for game- or utility-focused users.",
+    "Avoid dating, casino, and social/video candidates when the user's history has no positive ratings in those categories, as these rarely match observed preferences.",
+    "When the user has positively rated productivity or utility tools (scanners, editors, tools), prefer free, high-review productivity/tools candidates over paid niche or unrelated-category options.",
+    "Among candidates matching a positively rated category, prefer the one with free price and a strong average rating and review volume over paid or low-review alternatives."
+  ],
+  "steam": []
+}

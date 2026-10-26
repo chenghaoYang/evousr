@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-26",
+  "python": "3.14.6",
+  "unit_tests": 21,
+  "passed": 21,
+  "skipped": 0,
+  "sdist_build": true,
+  "wheel_build": true,
+  "wheel_installed_in_isolated_venv": true,
+  "installed_entrypoints_checked": [
+    "evousr-evolve",
+    "evousr-retrieve"
+  ],
+  "installed_rule_assets_loaded": true,
+  "synthetic_retrieval_scenarios": 216,
+  "network_model_calls": 0,
+  "gpu_runs": 0,
+  "version": "0.2.1",
+  "current_stopping_policy": {
+    "max_rounds": 10,
+    "patience": 2,
+    "restore_best": true
+  },
+  "stopping_tests": [
+    "ten_round_limit",
+    "two_non_improving_rounds",
+    "patience_reset",
+    "best_program_restoration",
+    "resume_patience",
+    "CLI_freezes_best_checkpoint"
+  ]
+}

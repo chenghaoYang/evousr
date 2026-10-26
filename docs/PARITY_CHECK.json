@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-26",
+  "network_model_calls": 0,
+  "predictor_messages_equal": 8600,
+  "population_checks_equal": 22,
+  "retrieved_neighbor_maps_equal": 8600,
+  "replayed_proposal_payloads_equal": 176,
+  "exported_search_pool_equal": true,
+  "validation_selection_equal": true,
+  "metric_comparison_atol": 1e-12,
+  "max_metric_abs_difference": 1.1102230246251565e-16,
+  "selected_program_equal": true,
+  "final_rule_count": 35,
+  "method": "Read-only replay of archived model responses and per-candidate predictions; no new model responses generated.",
+  "scope": "previous_fixed_two_round_release",
+  "validates_current_stopping_policy": false
+}

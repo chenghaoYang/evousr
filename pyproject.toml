@@ -4,12 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "evousr-distillation"
-version = "0.1.0"
-description = "Answer distillation for lightweight user simulators"
+version = "0.2.1"
+description = "Rule self-evolution and answer distillation for user simulators"
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+evolution = ["scikit-learn>=1.5,<2"]
+
 [project.scripts]
+evousr-evolve = "evousr_evolution.cli:main"
+evousr-retrieve = "evousr_evolution.retrieval:main"
 evousr-export = "evousr_distillation.export:main"
 evousr-prepare-model = "evousr_distillation.prepare_model:main"
 evousr-train = "evousr_distillation.train:main"
@@ -18,3 +23,6 @@ evousr-score = "evousr_distillation.score:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+evousr_evolution = ["assets/*.json"]

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "teacher_id": "dpsk41-rule-rewrite-20261026",
+  "source_sha256": {
+    "current_search": "92232413600e01aaf03aaf1099f0178ee35d8690df4d885a80e12be11b062fa4",
+    "current_request_builder": "f8bdecb5721c313739900e9c71c4d4e73f2ef24305e32e47f2410499dece53bf",
+    "archived_transport_runtime": "a832b735d12e7dfd7db949b0dc2296df40caf2006bc5f5bfe6444329a460c1c3",
+    "archived_validation_selector": "b5aa473a16659685068676654e9d89520fe3c7b815fe8f8cbcdaa47c9dbbff30",
+    "archived_baseline_renderer": "e035dbda6741d7674973ba0dab5bb44b377a8d2a454e44ee221bc2f58adb5a00",
+    "archived_retrieval_preparation": "e4361e79275abbf9beefc592f17bad4e6ca2c3edb16eb88cc9e224f25905dd3e"
+  },
+  "asset_sha256": {
+    "initial_s0.json": "5f84ae41ec547eee5f2c1d490dbcd785e22dd2e836290f6224d653f65209285a",
+    "initial_s1.json": "3136b7ff26be05cd264bae50d554ac3ff15767e489214ebe418338a5eaeaa4f2",
+    "initial_s2.json": "ef7bef067b6d3208e868487a4380448d441bbc9e68be65d46581c03847419576",
+    "teacher_rules.json": "68bfc58f2fe7b7193e5ab110b899f5dcc42599953e4d530426e24966c65583fd"
+  },
+  "original_prepared_data_sha256": {
+    "scenes.jsonl": "befb5dc1418bdeab6c87c9ecd426a572cd59da2568be20e9335c405aada7a579",
+    "neighbors.json": "464cfeb69cf827ebd4ce7b0c9730b78f4a0174c94da19b153bd873c48c5a2ac7",
+    "membership.json": "e81899f91ef3bade64f96242330c92d6a12c4e4a3007526de0fbc42ab5c79f70"
+  },
+  "initialization": "Three historical T4 fitting-adaptive programs (seeds 0, 1, 2) plus empty rules",
+  "original_algorithm_seed": 20261025,
+  "original_split_seed": 20261017,
+  "current_stopping_policy": {
+    "max_rounds": 10,
+    "patience": 2,
+    "metric": "validation_confirmation_macro",
+    "restore_best": true
+  },
+  "reported_experiment_stopping": "fixed_two_rounds"
+}
